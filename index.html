@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--
+==========================================================================
+  QUICK CUSTOMIZATION GUIDE
+  Use Find & Replace (Ctrl/Cmd + F) in your editor for each placeholder.
+==========================================================================
+
+  TEXT PLACEHOLDERS
+  -----------------
+  [COACH NAME]              Your name or brand name (appears in logo, footer, titles)
+  YOUR_INSTAGRAM            Your Instagram username, without the @
+  your@email.com            Your email address (used in mailto: links)
+  [BIO]                     Your personal story in the About section
+  [X]+                      Hero statistic (e.g. "150+"). Only use real numbers.
+  [Client testimonial ...]  Real testimonials, with the client's permission
+  [CLIENT NAME]             Client names (or initials) for results and testimonials
+  [X Weeks]                 Transformation duration
+  [Add verified result]     A real, verified result (e.g. "-8 kg, +2 kg lean mass")
+  https://YOUR-SITE-URL/    Your live GitHub Pages URL (for social sharing previews)
+
+  COACHING SERVICES
+  -----------------
+  Edit the six <article class="service-card"> blocks in the "SERVICES" section.
+  Delete a whole <article> block to remove a service.
+
+  IMAGES  (replace the files inside /images, keep the same file names)
+  ------
+  images/hero.jpg                       Hero portrait (portrait orientation, ~900x1200)
+  images/about.jpg                      About portrait (~900x1125)
+  images/transformation-1-before.jpg    Before / after pairs (~600x800 each)
+  images/transformation-1-after.jpg     ... up to transformation-3
+  images/meal-prep.jpg, high-protein.jpg, groceries.jpg, meal-containers.jpg
+  images/workout.jpg                    Wide background for the philosophy section (~1600x900)
+  images/instagram-1.jpg ... instagram-6.jpg   Square images (~600x600)
+  images/og-image.jpg                   Social sharing preview (1200x630)
+
+  Tip: compress photos before uploading (e.g. squoosh.app), aim for < 300 KB each.
+==========================================================================
+-->
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>[COACH NAME] | Online Fitness Coach for Fat Loss &amp; Muscle Gain</title>
+  <meta name="description" content="Personalized online fitness coaching with [COACH NAME]: fat loss, muscle gain, body recomposition, custom workout plans, nutrition and meal prep guidance.">
+  <meta name="robots" content="index, follow">
+  <meta name="theme-color" content="#131210">
+
+  <!-- Social sharing (replace YOUR-SITE-URL with your live GitHub Pages address) -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="[COACH NAME] | Online Fitness Coaching">
+  <meta property="og:description" content="Personalized fitness, nutrition and lifestyle coaching to help you lose fat, build muscle and create results that last.">
+  <meta property="og:image" content="https://YOUR-SITE-URL/images/og-image.jpg">
+  <meta property="og:url" content="https://YOUR-SITE-URL/">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <!-- Font: Manrope (one family, three weights) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- Invisible anchor that powers the CSS-only mobile menu (do not remove) -->
+  <span id="menu" class="menu-anchor" aria-hidden="true"></span>
+
+  <!-- =========================
+       NAVIGATION
+  ========================== -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="#home" class="logo">[COACH NAME]</a>
+
+      <a href="#menu" class="menu-open" aria-label="Open menu">
+        <span class="menu-icon" aria-hidden="true"></span>Menu
+      </a>
+
+      <nav class="site-nav" aria-label="Main navigation">
+        <div class="site-nav-top">
+          <span class="logo">[COACH NAME]</span>
+          <a href="#close" class="menu-close" aria-label="Close menu">Close</a>
+        </div>
+        <ul class="nav-list">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#coaching">Coaching</a></li>
+          <li><a href="#transformations">Transformations</a></li>
+          <li><a href="#nutrition">Nutrition</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <a href="#contact" class="btn btn-primary nav-cta">Start Coaching →</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+
+    <!-- =========================
+         HERO
+    ========================== -->
+    <section class="hero" id="home">
+      <div class="container hero-grid">
+        <div class="hero-content">
+          <p class="eyebrow">Online fitness coaching</p>
+          <h1 class="hero-title">
+            <span>Build Strength.</span>
+            <span>Lose Fat.</span>
+            <span>Become Your Best Version.</span>
+          </h1>
+          <p class="hero-lead">Personalized fitness, nutrition and lifestyle coaching designed to help you lose fat, build muscle and create results that actually last.</p>
+          <div class="btn-row">
+            <a href="#contact" class="btn btn-primary">Start Your Transformation</a>
+            <a href="#coaching" class="btn btn-ghost">View Coaching Plans</a>
+          </div>
+          <p class="hero-trust">Fat Loss • Muscle Gain • Meal Prep • Sustainable Fitness</p>
+        </div>
+
+        <div class="hero-media">
+          <img src="images/hero.jpg" alt="[COACH NAME], fitness coach, in the gym" width="900" height="1200" fetchpriority="high">
+          <!-- Replace [X]+ with a real, verifiable number -->
+          <div class="stat-card">
+            <strong>[X]+</strong>
+            <span>Clients coached</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================
+         ABOUT
+    ========================== -->
+    <section class="section about" id="about">
+      <div class="container split">
+        <div class="about-media">
+          <img src="images/about.jpg" alt="Portrait of [COACH NAME]" width="900" height="1125" loading="lazy">
+        </div>
+
+        <div class="about-content">
+          <p class="eyebrow">Meet your coach</p>
+          <h2 class="section-title">More than workouts. A complete approach to transformation.</h2>
+          <p>Hi, I'm [COACH NAME]. [BIO: Two or three sentences about your story, why you started coaching and who you love working with.]</p>
+          <p>I help everyday people lose body fat, build lean muscle and get stronger, without extreme diets or two-hour gym sessions. Together we fix your nutrition, build habits that fit your life, and keep you consistent long after the first few weeks.</p>
+
+          <ul class="about-list">
+            <li>Lose body fat</li>
+            <li>Build lean muscle</li>
+            <li>Improve strength</li>
+            <li>Improve nutrition</li>
+            <li>Build sustainable habits</li>
+            <li>Stay consistent</li>
+          </ul>
+
+          <blockquote class="about-quote">
+            <p>“Fitness isn't about doing more. It's about doing the right things consistently.”</p>
+          </blockquote>
+
+          <a href="#contact" class="text-link">Work With Me →</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================
+         SERVICES
+    ========================== -->
+    <section class="section services" id="coaching">
+      <div class="container">
+        <header class="section-head">
+          <p class="eyebrow">How I can help you</p>
+          <h2 class="section-title">A personalized approach built around your body, lifestyle and goals.</h2>
+        </header>
+
+        <div class="services-grid">
+          <article class="service-card">
+            <h3>Fat Loss</h3>
+            <p>Personalized calorie and nutrition strategies designed for sustainable fat loss while maintaining muscle.</p>
+          </article>
+          <article class="service-card">
+            <h3>Muscle Gain</h3>
+            <p>Structured training and nutrition plans focused on building strength and lean muscle.</p>
+          </article>
+          <article class="service-card">
+            <h3>Body Recomposition</h3>
+            <p>Lose fat while building muscle through a combination of progressive training and nutrition.</p>
+          </article>
+          <article class="service-card">
+            <h3>Personalized Workouts</h3>
+            <p>Training programs designed around your experience, schedule, equipment and goals.</p>
+          </article>
+          <article class="service-card">
+            <h3>Nutrition &amp; Meal Prep</h3>
+            <p>Simple, practical meal strategies and meal-prep guidance that fit your lifestyle.</p>
+          </article>
+          <article class="service-card">
+            <h3>Online Coaching</h3>
+            <p>Ongoing accountability, guidance and adjustments to help you stay consistent.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================
+         PROCESS
+    ========================== -->
+    <section class="section process" aria-labelledby="process-title">
+      <div class="container">
+        <header class="section-head">
+          <p class="eyebrow">The coaching process</p>
+          <h2 class="section-title" id="process-title">Your transformation starts here.</h2>
+        </header>
+
+        <ol class="process-list">
+          <li class="step">
+            <span class="step-num" aria-hidden="true">01</span>
+            <h3>Assess</h3>
+            <p>Understand your current body composition, lifestyle, habits and goals.</p>
+          </li>
+          <li class="step">
+            <span class="step-num" aria-hidden="true">02</span>
+            <h3>Plan</h3>
+            <p>Build a personalized workout and nutrition strategy.</p>
+          </li>
+          <li class="step">
+            <span class="step-num" aria-hidden="true">03</span>
+            <h3>Execute</h3>
+            <p>Follow your training, nutrition and meal-prep system with ongoing guidance.</p>
+          </li>
+          <li class="step">
+            <span class="step-num" aria-hidden="true">04</span>
+            <h3>Adapt</h3>
+            <p>Track progress and continuously adjust the plan based on results.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- =========================
+         TRANSFORMATIONS
+         Copy an <article class="result-card"> block to add more (up to 6).
+    ========================== -->
+    <section class="section results" id="transformations">
+      <div class="container">
+        <header class="section-head">
+          <p class="eyebrow">Transformations</p>
+          <h2 class="section-title">Real people. Real progress.</h2>
+        </header>
+
+        <div class="results-grid">
+          <article class="result-card">
+            <div class="result-media">
+              <figure>
+                <img src="images/transformation-1-before.jpg" alt="[CLIENT NAME] before coaching" width="600" height="800" loading="lazy">
+                <figcaption>Before</figcaption>
+              </figure>
+              <figure>
+                <img src="images/transformation-1-after.jpg" alt="[CLIENT NAME] after coaching" width="600" height="800" loading="lazy">
+                <figcaption>After</figcaption>
+              </figure>
+            </div>
+            <div class="result-body">
+              <h3>[CLIENT NAME]</h3>
+              <dl class="result-meta">
+                <dt>Goal</dt><dd>Fat Loss</dd>
+                <dt>Duration</dt><dd>[X Weeks]</dd>
+                <dt>Result</dt><dd>[Add verified result]</dd>
+              </dl>
+            </div>
+          </article>
+
+          <article class="result-card">
+            <div class="result-media">
+              <figure>
+                <img src="images/transformation-2-before.jpg" alt="[CLIENT NAME] before coaching" width="600" height="800" loading="lazy">
+                <figcaption>Before</figcaption>
+              </figure>
+              <figure>
+                <img src="images/transformation-2-after.jpg" alt="[CLIENT NAME] after coaching" width="600" height="800" loading="lazy">
+                <figcaption>After</figcaption>
+              </figure>
+            </div>
+            <div class="result-body">
+              <h3>[CLIENT NAME]</h3>
+              <dl class="result-meta">
+                <dt>Goal</dt><dd>Muscle Gain</dd>
+                <dt>Duration</dt><dd>[X Weeks]</dd>
+                <dt>Result</dt><dd>[Add verified result]</dd>
+              </dl>
+            </div>
+          </article>
+
+          <article class="result-card">
+            <div class="result-media">
+              <figure>
+                <img src="images/transformation-3-before.jpg" alt="[CLIENT NAME] before coaching" width="600" height="800" loading="lazy">
+                <figcaption>Before</figcaption>
+              </figure>
+              <figure>
+                <img src="images/transformation-3-after.jpg" alt="[CLIENT NAME] after coaching" width="600" height="800" loading="lazy">
+                <figcaption>After</figcaption>
+              </figure>
+            </div>
+            <div class="result-body">
+              <h3>[CLIENT NAME]</h3>
+              <dl class="result-meta">
+                <dt>Goal</dt><dd>Body Recomposition</dd>
+                <dt>Duration</dt><dd>[X Weeks]</dd>
+                <dt>Result</dt><dd>[Add verified result]</dd>
+              </dl>
+            </div>
+          </article>
+        </div>
+
+        <p class="results-note">Shared with each client's permission. Individual results vary with starting point, consistency and lifestyle.</p>
+      </div>
+    </section>
+
+    <!-- =========================
+         NUTRITION
+    ========================== -->
+    <section class="section nutrition" id="nutrition">
+      <div class="container nutrition-grid">
+        <div class="nutrition-content">
+          <p class="eyebrow">Nutrition &amp; meal prep</p>
+          <h2 class="section-title">Your diet shouldn't feel like a punishment.</h2>
+          <p class="lead">Learn how to eat for your goals without giving up the foods you enjoy.</p>
+
+          <div class="features">
+            <div class="feature">
+              <h3>High Protein</h3>
+              <p>Build meals around sufficient protein.</p>
+            </div>
+            <div class="feature">
+              <h3>Smart Calories</h3>
+              <p>Understand portions and calorie intake.</p>
+            </div>
+            <div class="feature">
+              <h3>Meal Prep</h3>
+              <p>Make healthy eating easier and more consistent.</p>
+            </div>
+            <div class="feature">
+              <h3>Realistic Nutrition</h3>
+              <p>Create a diet you can actually follow long-term.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="food-mosaic">
+          <div class="tile tile-a"><img src="images/meal-prep.jpg" alt="Weekly meal preparation on a kitchen counter" width="800" height="1000" loading="lazy"></div>
+          <div class="tile tile-b"><img src="images/high-protein.jpg" alt="High-protein meal with chicken, rice and vegetables" width="800" height="800" loading="lazy"></div>
+          <div class="tile tile-c"><img src="images/groceries.jpg" alt="Fresh groceries laid out for the week" width="800" height="800" loading="lazy"></div>
+          <div class="tile tile-d"><img src="images/meal-containers.jpg" alt="Prepared meals portioned into containers" width="1200" height="600" loading="lazy"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================
+         PHILOSOPHY
+    ========================== -->
+    <section class="philosophy" aria-labelledby="philosophy-title">
+      <div class="philosophy-bg" aria-hidden="true">
+        <img src="images/workout.jpg" alt="" width="1600" height="900" loading="lazy">
+      </div>
+      <div class="container">
+        <h2 class="statement" id="philosophy-title">
+          <span>Train smart.</span>
+          <span>Eat better.</span>
+          <span>Stay consistent.</span>
+        </h2>
+        <p class="statement-text">Real change doesn't come from a 30-day challenge. It comes from training you can recover from, food you actually enjoy and habits simple enough to keep on your busiest week. That's the system we build together.</p>
+      </div>
+    </section>
+
+    <!-- =========================
+         TESTIMONIALS
+         Only publish real testimonials, with permission.
+    ========================== -->
+    <section class="section testimonials" aria-labelledby="testimonials-title">
+      <div class="container">
+        <header class="section-head">
+          <p class="eyebrow">Testimonials</p>
+          <h2 class="section-title" id="testimonials-title">What clients say.</h2>
+        </header>
+
+        <div class="testimonial-grid">
+          <figure class="testimonial">
+            <blockquote><p>“[Client testimonial goes here.]”</p></blockquote>
+            <figcaption>
+              <strong>[CLIENT NAME]</strong>
+              <span>Fat Loss</span>
+            </figcaption>
+          </figure>
+          <figure class="testimonial">
+            <blockquote><p>“[Client testimonial goes here.]”</p></blockquote>
+            <figcaption>
+              <strong>[CLIENT NAME]</strong>
+              <span>Muscle Gain</span>
+            </figcaption>
+          </figure>
+          <figure class="testimonial">
+            <blockquote><p>“[Client testimonial goes here.]”</p></blockquote>
+            <figcaption>
+              <strong>[CLIENT NAME]</strong>
+              <span>Recomposition</span>
+            </figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================
+         INSTAGRAM
+    ========================== -->
+    <section class="section instagram" aria-labelledby="instagram-title">
+      <div class="container">
+        <div class="insta-head">
+          <div>
+            <p class="eyebrow">Instagram</p>
+            <h2 class="section-title" id="instagram-title">Follow the journey.</h2>
+            <p class="lead">Training, nutrition, meal prep, transformations and everyday fitness.</p>
+            <p class="insta-handle">Instagram: <a href="https://instagram.com/YOUR_INSTAGRAM" target="_blank" rel="noopener">@YOUR_INSTAGRAM</a></p>
+          </div>
+          <a href="https://instagram.com/YOUR_INSTAGRAM" class="btn btn-ghost" target="_blank" rel="noopener">Follow on Instagram →</a>
+        </div>
+
+        <div class="insta-grid">
+          <a class="insta-tile" href="https://instagram.com/YOUR_INSTAGRAM" target="_blank" rel="noopener"><img src="images/instagram-1.jpg" alt="Instagram post: training session" width="600" height="600" loading="lazy"></a>
+          <a class="insta-tile" href="https://instagram.com/YOUR_INSTAGRAM" target="_blank" rel="noopener"><img src="images/instagram-2.jpg" alt="Instagram post: meal prep" width="600" height="600" loading="lazy"></a>
+          <a class="insta-tile" href="https://instagram.com/YOUR_INSTAGRAM" target="_blank" rel="noopener"><img src="images/instagram-3.jpg" alt="Instagram post: high-protein meal" width="600" height="600" loading="lazy"></a>
+          <a class="insta-tile" href="https://instagram.com/YOUR_INSTAGRAM" target="_blank" rel="noopener"><img src="images/instagram-4.jpg" alt="Instagram post: client progress" width="600" height="600" loading="lazy"></a>
+          <a class="insta-tile" href="https://instagram.com/YOUR_INSTAGRAM" target="_blank" rel="noopener"><img src="images/instagram-5.jpg" alt="Instagram post: gym workout" width="600" height="600" loading="lazy"></a>
+          <a class="insta-tile" href="https://instagram.com/YOUR_INSTAGRAM" target="_blank" rel="noopener"><img src="images/instagram-6.jpg" alt="Instagram post: everyday fitness" width="600" height="600" loading="lazy"></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================
+         CONTACT / CTA
+    ========================== -->
+    <section class="section contact" id="contact">
+      <div class="container">
+        <div class="contact-panel">
+          <p class="eyebrow">Start coaching</p>
+          <h2 class="contact-title">Ready to start your transformation?</h2>
+          <p class="lead">Whether your goal is to lose fat, build muscle or completely change your approach to fitness, let's build a plan around you.</p>
+          <div class="btn-row">
+            <a href="mailto:your@email.com?subject=Coaching%20enquiry" class="btn btn-primary">Email Me</a>
+            <a href="https://instagram.com/YOUR_INSTAGRAM" class="btn btn-ghost" target="_blank" rel="noopener">Instagram</a>
+          </div>
+          <p class="contact-details">
+            <a href="mailto:your@email.com">your@email.com</a>
+            <a href="https://instagram.com/YOUR_INSTAGRAM" target="_blank" rel="noopener">@YOUR_INSTAGRAM</a>
+          </p>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- =========================
+       FOOTER
+  ========================== -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <a href="#home" class="logo">[COACH NAME]</a>
+        <p>Fitness Coach • Mentor • Nutrition &amp; Lifestyle</p>
+      </div>
+      <nav aria-label="Footer navigation">
+        <ul class="footer-links">
+          <li><a href="https://instagram.com/YOUR_INSTAGRAM" target="_blank" rel="noopener">Instagram</a></li>
+          <li><a href="mailto:your@email.com">Email</a></li>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#coaching">Coaching</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="container">
+      <p class="copyright">© 2026 [COACH NAME]. All rights reserved.</p>
+    </div>
+  </footer>
+</body>
+</html>
